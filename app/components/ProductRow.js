@@ -1,3 +1,5 @@
+// NOTE: not in use in landing page application
+
 import PropTypes from 'prop-types';
 import React from 'react';
 

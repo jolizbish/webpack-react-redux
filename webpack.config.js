@@ -58,6 +58,10 @@ module.exports = {
                 test: /\.scss$/,
                 loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]!sass'
             },
+            {
+                test: /\.(jpg|png)$/,
+                loader: 'url-loader',
+            },
             { test: /\.woff(2)?(\?[a-z0-9#=&.]+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
             { test: /\.(ttf|eot|svg)(\?[a-z0-9#=&.]+)?$/, loader: 'file' }
         ]
